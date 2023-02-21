@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+
+.container{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: aliceblue;
+}
+header{
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+body {
+    font-family:'Playfair Display SC';
+    font-size: 16px;
+    color: rgb(243, 237, 238);
+    background-color: rgb(59,70,92);
+    margin-top: 0px;
+}
+tbody tr td {
+    width: auto;
+    text-align: center;
+}
+body nav {
+    width: auto;
+    background-color: rgb(34,39,54);
+    border-width: thick;
+    border-color: rgb(211,232,224);
+}
+.content {
+    background-color: rgb(31,36,48);
+}
+a:link {
+    color: rgb(248, 244, 185);
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: rgb(166, 172, 243);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgba(231, 186, 109, 0.685);
+}
+a:active {
+    text-decoration: none;
+    color: rgba(188,238,153,1);
+}
+h1 {
+    font-size: 36px;
+    color: rgb(237, 215, 142);
+}
+h2 {
+    font-size: 24px;
+    color: rgb(243, 240, 162);
+}
+h3 {
+    font-size: 18px;
+    color: rgb(239, 236, 170);
+}
+p {
+    font-size: 14px;
+    color: rgb(233,232,212);
+}
+
+footer {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(6, 7, 72, 0.657);
+    color: rgba(239,228,228,1.00);
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgba(11, 40, 103, 0.882);
+    justify-content: space-around;
+}
+.box1 {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    background-color: rgba(153, 171, 201, 0.85);
+    animation-name: flexanimation; 
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+.box2 {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    background-color:  rgba(153, 171, 201, 0.85);
+    animation-name: flexanimation; 
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+.box3 {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    background-color:  rgba(153, 171, 201, 0.85);
+    animation-name: flexanimation; 
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+.box4 {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    background-color: rgba(153, 171, 201, 0.85);
+    animation-name: flexanimation; 
+    animation-delay: 8s;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes flexanimation { 
+      from {background-color: rgba(153, 171, 201, 0.85) ;}
+      to {background-color: rgba(240, 248, 255, 0.934);}
+      100% { 
+        flex-grow: 4; 
+      }
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+      #div {
+        font-family: 'Cormorant Garamond';
+        font-size: 30px;
+        padding: 30%;
+
+      }
+      #p1 {
+        position: relative;
+        background: rgba(240, 248, 255, 0.934);
+        color: black;
+        font-size: 30px;
+        top: 20px;
+        left: 20px;
+        transition: 4s ease;
+      }
+    
+    #p1:hover {
+        -webkit-transform: rotateZ(180deg);
+        -ms-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+        transition: 2s ease;
+        background-color: rgba(153, 171, 201, 0.85);
+    }
+    
+    #p2 {
+        transition: 3s ease;
+        background-color: rgba(153, 171, 201, 0.85);
+    }
+    
+    #p2:hover {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg);
+        transition: 2s ease;
+        background-color: rgba(153, 171, 201, 0.85);
+    }

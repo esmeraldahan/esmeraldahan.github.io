@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="theStyle.css">
-    
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
 
 
@@ -52,14 +52,36 @@
                 <br> as he told me about the Page of Cups,
                 <br> the echo of what
                 <br> I've never called you.</p>
-            
-            
             <img src="../pics/solmaz.jpg" alt="photo" id="1" onclick="showone()" />
             <div id="div"></div>
+            <div id="picRoll"><ul class="slides">
+              
+              <input type="radio" id="control-1" name="control" checked>
+              <input type="radio" id="control-2" name="control">
+              <input type="radio" id="control-3" name="control">
+              <input type="radio" id="control-4" name="control">
+              <input type="radio" id="control-5" name="control">
+             
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+             
+              <div class="controls-visible">
+                  <label for="control-1"></label>
+                  <label for="control-2"></label>
+                  <label for="control-3"></label>
+                  <label for="control-4"></label>
+                  <label for="control-5"></label>
+              </div>
+          </ul>
+     
+      </div>
          
         </div>
         <footer>This is a footer</footer>
        
-        <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>

@@ -65,6 +65,7 @@ h3 {
 p {
     font-size: 14px;
     color: rgb(233,232,212);
+    margin: auto;
 }
 
 footer {
@@ -142,12 +143,10 @@ footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px;
       }
       #div {
         font-family: 'Cormorant Garamond';
-        font-size: 30px;
-        padding: 30%;
+        font-size: 15px;
 
       }
       #p1 {
@@ -179,4 +178,143 @@ footer {
         transform: rotateZ(-360deg);
         transition: 2s ease;
         background-color: rgba(153, 171, 201, 0.85);
+    }
+    #picScroll {
+            display: flex;
+            justify-content: center;
+			margin:0;
+            align-items: center;
+            min-height: 100vh;
+            background-color: bisque;
+        }
+    
+        ul.slides{
+            position: relative;
+            width: 800px;
+            height: 900px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+            overflow: hidden;
+        }
+        li.slide{
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            transition: .5s transform ease-in-out;
+        }
+        .slide:nth-of-type(1){
+            background:url(../pics/1.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+
+        .slide:nth-of-type(2){
+            background:url(../pics/2.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+            left: 100%;
+        }
+ 
+        .slide:nth-of-type(3){
+            background:url(../pics/3.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+            left: 200%;
+        }
+ 
+        .slide:nth-of-type(4){
+            background:url(../pics/4.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+            left: 300%;
+        }
+ 
+        .slide:nth-of-type(5){
+            background:url(../pics/5.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+            left: 400%;
+        }
+     
+     input[type="radio"]{
+        position: relative;
+        z-index: 100;
+        display: none;
+    }
+
+    
+    .controls-visible{
+        position: absolute;
+        width: 100%;
+        bottom: 12px;
+        text-align: center;
+    }
+
+    
+    .controls-visible  label{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 5px;
+        border: 2px solid #fff;
+    }
+    .slides input[type="radio"]:nth-of-type(1):checked~
+    .controls-visible label:nth-of-type(1)
+    {
+        background-color: #333;
+    }
+    .slides input[type="radio"]:nth-of-type(2):checked~
+    .controls-visible label:nth-of-type(2)
+    {
+        background-color: #333;
+    }
+    .slides input[type="radio"]:nth-of-type(3):checked~
+    .controls-visible label:nth-of-type(3)
+    {
+
+        background-color:#333;
+    }
+    .slides input[type="radio"]:nth-of-type(4):checked~
+    .controls-visible label:nth-of-type(4)
+    {
+        background-color: #333;
+    }
+    .slides input[type="radio"]:nth-of-type(5):checked~
+    .controls-visible label:nth-of-type(5)
+    {
+        background-color: #333;
+    }
+   
+    .slides input[type="radio"]:nth-of-type(1):checked~.slide{
+
+        transform: translateX(0%);
+
+    }
+    .slides input[type="radio"]:nth-of-type(2):checked~.slide{
+ 
+        transform: translateX(-100%);
+
+    }
+    .slides input[type="radio"]:nth-of-type(3):checked~.slide{
+
+        transform: translateX(-200%);
+
+    }
+    .slides input[type="radio"]:nth-of-type(4):checked~.slide{
+
+        transform: translateX(-300%);
+
+    }
+    .slides input[type="radio"]:nth-of-type(5):checked~.slide{
+
+        transform: translateX(-400%);
+
     }

@@ -62,6 +62,26 @@ h3 {
     font-size: 18px;
     color: rgb(239, 236, 170);
 }
+h4{
+    color:transparent;
+    font-size:3em;
+    background: linear-gradient(to right, #fff,#333,#fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    animation: move 3s linear infinite;
+}
+@keyframes move{
+    0%{
+        background-position: -500%;
+
+    }
+    100%{
+        background-position: 500%;
+
+    }
+}
 p {
     font-size: 14px;
     color: rgb(233,232,212);
@@ -318,3 +338,25 @@ footer {
         transform: translateX(-400%);
 
     }
+
+    #pp2{
+		width:9999px;
+		height:1000px;
+		animation:switch 15s infinite;
+		}
+		#pp2>img{
+		float:left;
+		}
+		#pp1{
+		width:1000px;
+		height:auto;
+		overflow:hidden;
+		}
+		@keyframes switch{
+		0%{};
+		20%{transform:translateX(0px);}
+		40%{transform:translateX(-1000px);}
+		60%{transform:translateX(-2000px);}
+		80%{transform:translateX(-3000px);}
+		100%{transform:translateX(-4000px);}
+		}

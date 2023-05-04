@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wes Anderson</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+		}
+        body{background-color: #171717}
+
+        .box{
+            width: 100vw;
+            height: 100vh;
+            
+            margin: 50px 50px;
+            background-color: #151515 ;
+            border-right: 0;
+        }
+
+        .box>div{
+            width: 120px;
+            height: 100vh;
+			opacity: .3;
+            float: left;
+            background:url("../img/moonriseKingdom.png") no-repeat center center;transition:all .7s ease 0s;
+        }
+.box>div:hover{
+
+			opacity: 1;
+           
+        }
+.box>div h1{
+			color: #fff;
+            font-size: 30px;
+            padding: 50px 50px;
+            
+        }
+#returnButt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    background-color: #fff;
+}  
+    </style>
+</head>
+<body>
+    <a href="../index.html"><div id="returnButt"></div></a>
+    
+    <div class="box">
+        <div>
+            <a href="1.html"><h1>Moonrise Kingdom</h1></a>
+        </div>
+        <div style="background-image: url('../img/dog.png');">
+            <a href="2.html"><h1>Isle of Dogs</h1></a>
+        </div>
+        <div  style="background-image: url('../img/fox.png');">
+            <a href="3.html"><h1>Fantastic Mr. Fox </h1></a>
+        </div>
+        <div  style="background-image: url('../img/the\ french.png');">
+            <a href=4.html"><h1>The French Dispatch</h1></a>>
+        </div>
+        <div  style="background-image: url('../img/budapest.png');">
+            <a href=5.html"><h1>The Grand Budapest Hotel</h1></a>
+        </div>
+        <div  style="background-image: url('../img/derr.png');">
+            <a href="6.html"><h1>The Darjeeling Limited</h1></a>
+        </div>
+        <div  style="background-image: url('../img/rushmore.png');">
+            <a href="7.html"><h1>Rushmore</h1></a>
+        </div>
+        <div  style="background-image: url('../img/last.png');">
+            <a href="8.html"><h1>The Life Aquatic</h1></a>
+        </div>
+    </div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+
+    $(".box>div").mouseover(function(){
+        $(this).stop().animate({
+            "width":"800px"
+        },200).siblings().stop().animate({
+            "width":"440px"
+        },200)
+    })
+
+    $(".box>div").mouseout(function(){
+        $(".box>div").stop().animate({
+            "width":"500px"
+        },200)
+    })
+
+
+</script>
+
+</body>
+</html>

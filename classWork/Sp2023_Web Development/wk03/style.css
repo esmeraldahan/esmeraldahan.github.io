@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+body{
+   background-color:rgba(0, 149, 255, 0.372);
+}
+
+h1{
+    font-family: 'Babylonica', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: #fefefe6c;
+    color: rgba(51, 51, 51, 0.738);
+    border: 1px solid #4a4a4a;
+}
+
+.marquee p {
+    font-family:'Playfair Display SC';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+#container{
+    background-color: rgba(127, 30, 184, 0.347);
+    padding:3em;
+    border-style: groove;
+    border: purple 2px;
+    justify-content: center;
+    
+}
+
+
+.box{
+    border: 2px dotted rgb(0, 0, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box:hover{
+    background-color:FFFBAC;
+    transition:0.5s;
+
+}
+
+.box:hover .image1{
+    transform: scale(1) translate(100px, 100px);
+    transition: 1s;
+   
+}
+
+.title{
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-size: 50px;
+  animation-name: spin;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes spin { 
+    0%{transform: rotate(0deg); }
+    25%{transform: rotate(20deg); }
+    50%{transform: rotate(40deg); }
+    75%{transform: rotate(20deg); }
+    100%{transform: rotate(0deg); }
+   
+}
+
+
+
+
+
+
+

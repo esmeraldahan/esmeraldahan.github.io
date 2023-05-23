@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<header>
+				
+		<nav class="main">
+			<a href="../index.html">home page</a>
+		</nav>
+	</header>
+
+<article>
+	<p class="text" id="text"> Sensation
+(Sensation)
+
+Through the blue summer days, I shall travel all the ways,
+
+Pricked by the ears of maize, trampling the dew:
+
+A dreamer, I will gaze, as underfoot the coolness plays.
+
+I’ll let the evening breeze drench my head anew.
+
+I shall say – not a thing: I shall think – not a thing:
+
+But an infinite love will swell in my soul,
+
+And far off I shall go, a bohemian,
+
+Through Nature – as happy, as if I had a girl.
+
+March 1870</p>
+	<button id="btn" ele-range>CLICK ME</button>
+</article>
+
+<script src="js/text.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+	var resetbtn = document.getElementById("btn");
+	var btn = new Neontext("btn");
+	var neontext = new Neontext("text");
+		neontext.render.run();
+		btn.render.run();
+	resetbtn.addEventListener("click",function(){
+		neontext.render.killer();
+		btn.render.killer();
+	})
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff"><br>
+</div>
+</body>
+</html>

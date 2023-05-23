@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=EB+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@500;600;700&family=Seaweed+Script&display=swap');
+
+body {
+    background-color: #f8f3d6;
+    color: #8ff18c;
+    font-family: 'EB Garamond', serif;
+    height: fit-content;
+}
+nav {
+    display: flex;
+    position: relative;
+    top:10em;
+
+}
+nav ul li{
+    height: 30px;
+    list-style: none;
+    margin-top: 20px;
+  } 
+nav ul li a.link{
+    font-family: 'Bevan', cursive;
+    position: fixed;
+    margin-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    z-index: 5;
+    color: #8ff18c;
+
+  }
+  
+  
+p{
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+#fixHeader {
+    position: fixed;
+    margin-top: -50px;
+    white-space: nowrap;
+    font-size: 15vw;
+    font-weight: 800;
+    z-index: -5;   
+}
+
+#wrap {
+    
+	width : 100%;
+	position :static;
+    
+    margin-inline: auto;
+    white-space: nowrap;
+}
+
+#mainContent{
+	width : 80%;
+    height: fit-content;
+	margin : 0 auto;
+
+}
+
+section{
+	background-color: rgb(8, 98, 36);
+	height:max-content;
+    margin-top: -10%;
+    padding-top: 20%;
+    padding-bottom: 40%;
+    
+}
+
+
+.subHeader{
+    font-family: 'Bevan', cursive;
+	display : flex;
+	justify-content: center;
+	float: none;
+	width : 100vw;
+	font-size : 11vw;
+	color : white;
+	position :absolute;
+	left : 0px;
+}
+
+h1 {
+    
+    font-family: 'Noto Serif JP';
+    font-size : 2em;
+}
+h2 {
+    font-size : 19vw;
+    font-family: 'Seaweed Script';
+    font-size : 2em;
+}
+
+
+
+
+.imgBox {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    position: relative;
+
+    
+    
+}
+#section1 .imgBox{
+    right: 40px;
+    top: 280px;
+    max-width: 70%;
+}
+
+.imgTagline {
+    width: fit-content;
+    font-size: 1em;
+}
+
+.textBox {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: relative;
+    margin-top: 80%;
+    left: 40%;
+    width:35%; /* line-height and br, how to align*/
+    line-height: 1.2;
+    gap: 35%;
+    font-size: 100%;
+}
+    
+#section2 .img{
+   position: absolute; 
+   margin-left:50% ;
+    max-width: 6%;
+}
+#section2 .textBox {
+ 
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+
+#section3 .img{
+    display : flex;
+	justify-content: center;
+	float: none;
+	width :100vw;
+	
+
+	position :relative;
+    margin-bottom: 200px;
+
+
+
+}
+
+footer {
+    margin-top: 50px;
+    font-size: larger;
+    text-align: center;
+}

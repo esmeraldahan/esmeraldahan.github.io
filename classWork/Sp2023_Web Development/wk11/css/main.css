@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family:'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+body {
+	background: #000;
+}
+p{
+	width: 80%;
+	margin: 100px auto 30px;
+	line-height: 1.5;
+}
+button{
+	width: 150px;
+	height: 50px;
+	background: rgb(238, 234, 225);
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 0 auto;
+	display: block;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

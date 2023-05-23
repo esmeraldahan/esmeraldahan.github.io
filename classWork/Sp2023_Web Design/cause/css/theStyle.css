@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bevan&family=EB+Garamond:wght@400;500;600&family=Seaweed+Script&family=Spectral:wght@200&display=swap');
+
+body{
+	font-family: 'Spectral';
+}
+.navbar {
+	padding: 1rem 0;
+  }
+  
+  .navbar-brand.logo {
+	font-family: 'Abril Fatface';
+	font-size: 2rem;
+	font-weight: 600;
+	
+  }
+  
+  .navbar-nav .nav-link {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-shadow: 1px 1px 3px rgba(197, 215, 240, 0.2);
+	margin-right: 1rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+	color: #fff;
+  }
+  
+  .form-control:focus {
+	box-shadow: none;
+  }
+  
+  .btn-outline-light:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .btn-danger {
+	background-color: #5047ff;
+	border-color: #72c2ce;
+  }
+  
+  .btn-danger:hover {
+	background-color: #d1ac27;
+	border-color: #e3ec2d;
+  }
+  
+  @media (max-width: 991.98px) {
+	.navbar-brand.logo {
+	  font-size: 1.5rem;
+	}
+  }
+  
+.col-md-12,
+.col-md-4,
+.col-md-6{
+	border : solid 0px rgb(36, 49, 144);
+}
+
+.noPadding{
+	padding : 0px;
+}
+
+.logo{
+	font-family: logoType;
+	font-size : 50pt;
+}
+
+.paddingTopBottom{
+	padding-top : 50px;
+	padding-bottom: 50px;
+}
+
+.paddingLeftRight{
+	padding-left : 150px;
+	padding-right : 150px
+}
+
+.cardImage{
+	height : 200px;
+}
+
+.customCardText{
+	height : 250px;
+}
+
+
+.contributionBtn{
+	width : 400px;
+	height : 60px;
+}
+
+.learnImage{
+	width : 100%;
+	height : auto;
+}
+
+#venice{
+	position : relative;
+}
+
+.caption{
+	position : absolute;
+	z-index : 10;
+	font-size : 45pt;
+	font-family: 'Abril Fatface';
+	bottom : 100px;
+	left : 150px;
+	color : white;
+}
+
+
+
+footer {
+	background-color: #004d4d;
+	padding: 50px 0;
+  }
+  
+
+  .display-5 {
+	color: #ffffff;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+  }
+
+  .input-group-text {
+	background-color: #ffffff;
+	color: #27cbcb;
+  }
+  
+  .form-control {
+	border-radius: 0;
+	border-color: #ffffff;
+  }
+  
+
+  #socialMedia i {
+	font-size: 24px;
+	color: #ffffff;
+	margin-right: 10px;
+  }
+  
+
+  #socialMedia i:hover {
+	transform: translateY(-3px);
+  }
+  

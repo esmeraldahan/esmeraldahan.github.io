@@ -1,0 +1,88 @@
+body,td,th {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    color: #4C130E;
+    font-weight: bold;
+}
+body {
+    background-color: #F2E6A6;
+    margin-top: 100px;
+}
+#wrap {
+    width: 80%;
+    height: auto;
+    margin: 100px;
+    
+}
+a:link {
+	color: rgba(2,50,16,1);
+	text-decoration: none;
+}
+a:visited {
+	color: rgba(2,50,16,1);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: rgba(59,93,6,1);
+}
+a:active {
+	text-decoration: none;
+	color: rgba(100,7,8,1);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin-left: 10%;
+    font-size: 36px;
+    color: rgba(36,137,197,1);
+}
+h2 {
+    font-size: 24px;
+    color: rgba(24,122,86,1);
+}
+h3 {
+    font-size: 18px;
+    color: rgba(251,235,108,1);
+}
+h4 {
+    font-size: 12px;
+    color: rgba(199,30,43,1);
+}
+header  {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    height: 65px;
+    font-weight: 400;
+    font-size: 70px;
+    color: rgba(24,122,86,1);
+    margin-left: 10%;
+
+}
+
+#mainArea {
+    height: fit-content;
+    background-color: rgb(248, 206, 90);
+    margin: auto;
+    width: 80%;
+}
+footer {
+    width: 80%;
+   margin-left: 120px;
+    margin-top: 100px;
+    height: auto;
+}
+ul {
+    margin: 120px;
+    height: 200px; 
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-weight: bold;
+    padding: 10px;
+    list-style: none;
+    line-height: 250%;}
+    
+
+    #socialMedia {
+    margin-left: 10%;    
+    }

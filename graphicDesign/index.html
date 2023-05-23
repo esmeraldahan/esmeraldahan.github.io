@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graphic design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+		}
+        body{background-color: #171717}
+
+        .box{
+            width: 100vw;
+            height: 100vh;
+            
+            margin: 50px 50px;
+            background-color: #151515 ;
+            border-right: 0;
+        }
+
+        .box>div{
+            width: 120px;
+            height: 100vh;
+			opacity: .3;
+            float: left;
+            background:url("img/1.jpg") no-repeat center center;transition:all .7s ease 0s;
+        }
+.box>div:hover{
+
+			opacity: 1;
+           
+        }
+.box>div h1{
+			color: #fff;
+            font-size: 30px;
+            padding: 50px 50px;
+            
+        }
+#returnButt{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    background-color: #fff;
+}  
+    </style>
+</head>
+<body>
+    <a href="../index.html"><div id="returnButt"></div></a>
+    
+    <div class="box">
+        <div>
+            
+        </div>
+        <div style="background-image: url('img/3.jpg');">
+            =
+        </div>
+        <div  style="background-image: url('img/2.jpg')">
+
+        </div>
+        <div  style="background-image: url('img/6.jpg');">
+
+        </div>
+        <div  style="background-image: url('img/4.jpg');">
+
+        </div>
+        <div  style="background-image: url('img/5.jpg');">
+
+        </div>
+        <div  style="background-image: url('img/7.jpg');">
+
+        </div>
+        <div  style="background-image: url('img/8.jpg');">
+
+        </div>
+    </div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+
+    $(".box>div").mouseover(function(){
+        $(this).stop().animate({
+            "width":"800px"
+        },200).siblings().stop().animate({
+            "width":"440px"
+        },200)
+    })
+
+    $(".box>div").mouseout(function(){
+        $(".box>div").stop().animate({
+            "width":"500px"
+        },200)
+    })
+
+
+</script>
+
+</body>
+</html>
